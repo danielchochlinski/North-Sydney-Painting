@@ -1,0 +1,91 @@
+.about {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/3.jpg);
+
+  background-size: cover;
+}
+
+.infoContainer {
+  display: grid;
+  margin: 10px;
+  padding: 20px;
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.aboutUs {
+  margin-left: 30px;
+  width: 80%;
+  height: 400px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  font-weight: 900;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transition: all 0.4s ease;
+}
+.aboutUs:hover {
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 54px 55px,
+    rgba(0, 0, 0, 0.3) 0px -12px 30px, rgba(0, 0, 0, 0.3) 0px 4px 6px,
+    rgba(0, 0, 0, 0.3) 0px 12px 13px, rgba(0, 0, 0, 0.3) 0px -3px 5px;
+}
+.skill {
+  width: 80%;
+  height: 100%;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  font-weight: 900;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      transition: all 0.4s ease;
+
+}
+.skill:hover {
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 54px 55px,
+    rgba(0, 0, 0, 0.3) 0px -12px 30px, rgba(0, 0, 0, 0.3) 0px 4px 6px,
+    rgba(0, 0, 0, 0.3) 0px 12px 13px, rgba(0, 0, 0, 0.3) 0px -3px 5px;
+}
+
+.progressBar {
+  margin-top: 50px;
+  margin-right: 20px;
+}
+.whyUs {
+  margin: 10px;
+  margin-top: 20px;
+}
+
+.whyUs h4 {
+  border: 1px solid #fff;
+  padding: 8px;
+  transition: all 0.5s ease;
+}
+.whyUs p {
+  transition: all 0.5s ease;
+}
+
+.boxHeader {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.boxHeader h4 {
+  margin-left: 10px;
+  text-align: center;
+}
+.awesome {
+  color: black;
+  margin-left: 20px;
+  border: none;
+  background: none;
+}

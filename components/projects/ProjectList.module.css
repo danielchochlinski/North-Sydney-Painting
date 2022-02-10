@@ -1,0 +1,14 @@
+.projects h1{
+ font-size:32px;
+ font-weight:bold;
+ border-bottom: 1px solid rgb(94, 92, 92);
+ margin-top: 15px;
+ padding: 20px;
+}
+.projectList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+  position: relative;
+  
+}
