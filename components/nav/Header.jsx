@@ -1,15 +1,19 @@
-import {Link, animateScroll} from "react-scroll"
+import { useState } from "react";
+import { Link, animateScroll } from "react-scroll";
+import ReorderIcon from "@material-ui/icons/Reorder";
+
 function Header() {
+  const [showLinks, setShowLinks] = useState(false);
+  const [style, setStyle] = useState(false);
+
   return (
     <nav className="nav">
-      <div>
-        <h1>North Sydney Painting and Decorating</h1>
-      </div>
-      <ul>
-        <li>
+      <h1>North Sydney Painting and Decorating</h1>
+      <div className="navbar" id={showLinks ? "hidden" : ""}>
+        <a>
           <Link onClick={() => animateScroll.scrollToTop()}>Home</Link>
-        </li>
-        <li>
+        </a>
+        <a>
           <Link
             to="services"
             smooth={true}
@@ -20,8 +24,9 @@ function Header() {
           >
             Services
           </Link>
-        </li>
-        <li>
+        </a>
+
+        <a>
           <Link
             to="aboutUs"
             smooth={true}
@@ -32,9 +37,9 @@ function Header() {
           >
             About Us
           </Link>
-        </li>
+        </a>
 
-        <li>
+        <a>
           <Link
             to="ourWork"
             smooth={true}
@@ -45,8 +50,9 @@ function Header() {
           >
             Our Work
           </Link>
-        </li>
-        <li>
+        </a>
+
+        <a>
           <Link
             to="testimonials"
             smooth={true}
@@ -57,8 +63,9 @@ function Header() {
           >
             Testimonials
           </Link>
-        </li>
-        <li>
+        </a>
+
+        <a>
           <Link
             to="contact"
             smooth={true}
@@ -69,8 +76,12 @@ function Header() {
           >
             Contact Us
           </Link>
-        </li>
-      </ul>
+        </a>
+
+        <button onClick={() => setShowLinks(!showLinks)}>
+          <ReorderIcon />
+        </button>
+      </div>
     </nav>
   );
 }

@@ -46,12 +46,11 @@ function FormInput() {
 
   async function sendEmailHandler(e) {
     e.preventDefault();
-    setError(null);
 
     let data = {
       name: enteredName,
       email: enteredEmail,
-      subject: enteredSubject,
+      phone: enteredPhone,
       message: enteredMessage,
     };
 
@@ -69,7 +68,7 @@ function FormInput() {
 
     resetNameInput();
     resetEmailInput();
-    resetSubjectInput();
+    resetPhoneInput();
     resetMessageInput();
   }
 
