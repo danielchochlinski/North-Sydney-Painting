@@ -4,11 +4,65 @@ import {
   faChevronLeft,
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
+import Typical from "react-typical";
+import ImgComp from "./ImgComp";
+import {Link} from "react-scroll"
 
-import ImgComp from "./ImgComp"
+let styles = {
+  textAlign: "center",
+  fontFamily: "Tangerine",
+  marginTop: "300px",
+  fontSize: "100px",
+};
 
 function ImageSlider(props) {
-  let slideArray = [<ImgComp src={"/1.jpg"} />];
+  let slideArray = [
+    <div className="front" style={styles}>
+      <h1>
+        <Typical
+          look={Infinity}
+          wrapper="b"
+          steps={[`North Sydney Painting & Decorating`, 100]}
+        />
+      </h1>
+      <a id="contactUs">
+        {" "}
+        <Link
+          to="contact"
+          smooth={true}
+          duration={1000}
+          offset={-100}
+          activeClass="active"
+          spy={true}
+        />
+        <button
+          style={{
+            zIndex: "99",
+            position: "absolute",
+            top: "700px",
+            left: "35%",
+            width: "400px",
+            height: "40px",
+            borderRadius: "20px",
+            background: "linear-gradient(to right, #fc5c7d, #6a82fb)",
+            border: "none",
+            fontSize: "20px",
+          }}
+        >
+          <Link
+            to="contact"
+            smooth={true}
+            duration={1000}
+            offset={-100}
+            activeClass="active"
+            spy={true}
+          >
+            GET QUOTE
+          </Link>
+        </button>
+      </a>
+    </div>,
+  ];
 
   const [x, setX] = useState(0);
 
@@ -21,25 +75,24 @@ function ImageSlider(props) {
     x === -100 * (slideArray.length - 1) ? setX(0) : setX(x - 100);
   }
   return (
-      <div className="slider">
-        {slideArray.map((pic, index) => (
-          <div
-            key={index}
-            className="slide"
-            style={{ transform: `translateX(${x}%)` }}
-          >
-            {pic}
-          </div>
-        ))}
+    <div className="slider">
+      {slideArray.map((pic, index) => (
+        <div
+          key={index}
+          className="slide"
+          style={{ transform: `translateX(${x}%)` }}
+        >
+          {pic}
+        </div>
+      ))}
 
-        <button className="button left" onClick={goLeftHandler}>
-          <FontAwesomeIcon icon={faChevronLeft} />
-        </button>
-        <button className="button right" onClick={goRightHandler}>
-          <FontAwesomeIcon icon={faChevronRight} />
-        </button>
-       
-      </div>
+      <button className="button left" onClick={goLeftHandler}>
+        <FontAwesomeIcon icon={faChevronLeft} />
+      </button>
+      <button className="button right" onClick={goRightHandler}>
+        <FontAwesomeIcon icon={faChevronRight} />
+      </button>
+    </div>
   );
 }
 

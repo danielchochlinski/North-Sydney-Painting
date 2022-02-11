@@ -53,7 +53,7 @@ ProgressBar.propTypes = {
 };
 ProgressBar.defaultProps = {
   max: 100,
-  color: "lightblue",
+  color: " linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c)",
   width: "100%",
 };
 export default ProgressBar;

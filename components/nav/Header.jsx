@@ -1,14 +1,28 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { Link, animateScroll } from "react-scroll";
 import ReorderIcon from "@material-ui/icons/Reorder";
+import Notification from "../ui/Notification";
+import NotificationContext from "../../store/notification-context";
 
 function Header() {
   const [showLinks, setShowLinks] = useState(false);
   const [style, setStyle] = useState(false);
+    const notificatioCtx = useContext(NotificationContext);
+    const activeNotification = notificatioCtx.notification;
 
   return (
     <nav className="nav">
+      {activeNotification && (
+        <Notification
+          title={activeNotification.title}
+          message={activeNotification.message}
+          status={activeNotification.status}
+        />
+      )}
       <h1>North Sydney Painting and Decorating</h1>
+      <div>
+        <a className="call">call: +61 487 556 397</a>
+      </div>
       <div className="navbar" id={showLinks ? "hidden" : ""}>
         <a>
           <Link onClick={() => animateScroll.scrollToTop()}>Home</Link>

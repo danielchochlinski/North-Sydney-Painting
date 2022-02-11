@@ -13,12 +13,34 @@ const ourServiceJSON = require("../../assets/ourService.json");
 
 export default () => {
   return (
-    <Fragment>
-      <h1 id="services" className="header">Our Services</h1>
+    <div className="serviceList">
+      <h1 id="services" className="header">
+        Our Services
+      </h1>
 
       <Swiper
-        style={{ position: "relative", top: "-100px", width: "90%", height: "90%" }} // install Swiper modules
+        style={{
+          position: "relative",
+          marginLeft: "20px",
+          top: "-100px",
+          width: "90%",
+          height: "90%",
+        }} // install Swiper modules
         modules={[Navigation, Pagination, Scrollbar, A11y]}
+        breakpoints={{
+          0: {slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          650: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+         
+        }}
         spaceBetween={50}
         slidesPerView={3}
         navigation
@@ -38,6 +60,6 @@ export default () => {
         ))}
         ...
       </Swiper>
-    </Fragment>
+    </div>
   );
 };

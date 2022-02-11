@@ -1,8 +1,10 @@
 import useInput from "../../hooks/useInput";
-
+import NotificationContext from "../../store/notification-context";
+import {useContext} from "react"
 const isNotEmpty = (value) => value.trim() !== "";
 
 function FormInput() {
+   const notificationCtx = useContext(NotificationContext);
   const {
     value: enteredName,
     isValid: nameIsValid,
@@ -59,9 +61,19 @@ function FormInput() {
         method: "POST",
         body: JSON.stringify(data),
       });
+         notificationCtx.showNotification({
+           title: "Successful",
+           message: "Your quote is on your way",
+           status: "success",
+         });
       if (!response.ok) {
         throw new Error("Something went wrong!");
       }
+         notificationCtx.showNotification({
+           title: "Unsuccesful",
+           message: "Order is on its way to you!",
+           status: "error",
+         });
     } catch (error) {
       console.log(error.message);
     }
@@ -73,7 +85,7 @@ function FormInput() {
   }
 
   return (
-    <form onSubmit={sendEmailHandler}>
+    <form className="formInput" onSubmit={sendEmailHandler}>
       <div>
         <input
           placeholder="Name"
@@ -110,9 +122,7 @@ function FormInput() {
           onBlur={messageBlurHandler}
         />
       </div>
-      <div className="buttonContact">
         <button>CONTACT US!</button>
-      </div>
     </form>
   );
 }
