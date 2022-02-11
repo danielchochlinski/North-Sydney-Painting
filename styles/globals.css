@@ -699,7 +699,7 @@ code {
 
   .testimonialsList {
     position: relative;
-    top: 950px;
+    top: 1100px;
   }
 
   .testimonialsList p {
@@ -715,7 +715,7 @@ code {
     position: relative;
     align-items: center;
     justify-content: center;
-    top: 950px;
+    top: 1100px;
     margin-left: 40px;
   }
 
@@ -770,6 +770,6 @@ code {
     height: 30px;
   }
 
-  
+
   
 }
