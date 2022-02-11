@@ -12,6 +12,11 @@ function Header() {
 
   return (
     <nav className="nav">
+      <h1>North Sydney Painting and Decorating</h1>
+
+      <div>
+        <a className="call">call: +61 487 556 397</a>
+      </div>
       {activeNotification && (
         <Notification
           title={activeNotification.title}
@@ -19,10 +24,6 @@ function Header() {
           status={activeNotification.status}
         />
       )}
-      <h1>North Sydney Painting and Decorating</h1>
-      <div>
-        <a className="call">call: +61 487 556 397</a>
-      </div>
       <div className="navbar" id={showLinks ? "hidden" : ""}>
         <a>
           <Link onClick={() => animateScroll.scrollToTop()}>Home</Link>

@@ -71,7 +71,7 @@ function FormInput() {
       }
          notificationCtx.showNotification({
            title: "Unsuccesful",
-           message: "Order is on its way to you!",
+           message: "Apologies for the inconvenience, please call us at : 0487 556 397",
            status: "error",
          });
     } catch (error) {

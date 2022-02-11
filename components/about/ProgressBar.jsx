@@ -26,7 +26,7 @@ function ProgressBar({ value, max, color, width, description }) {
          height: 15px;
         background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);   
         border-radius:20px;
-        background-color: ${(props) => props.color}
+        background-color:  linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c)
     }
    .descriptionn{
 margin-left: 30px;   }

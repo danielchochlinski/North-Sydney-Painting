@@ -12,19 +12,19 @@ function AboutUs() {
 
   const [value, setValue] = useState(0);
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setValue((oldValue) => {
-  //       const newValue = oldValue + 1;
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setValue((oldValue) => {
+        const newValue = oldValue + 10;
 
-  //       if (newValue === 100) {
-  //         clearInterval(interval);
-  //       }
+        if (newValue === 100) {
+          clearInterval(interval);
+        }
 
-  //       return newValue;
-  //     });
-  //   }, 10);
-  // }, []);
+        return newValue;
+      });
+    }, 1000);
+  }, []);
   return (
     <section className="about">
       <h1>ABOUT US</h1>

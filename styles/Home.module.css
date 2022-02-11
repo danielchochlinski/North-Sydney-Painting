@@ -1,5 +1,6 @@
 .container {
   padding: 0 2rem;
+  z-index: 999;
 }
 
 .main {
@@ -47,7 +48,7 @@
 
 .title,
 .description {
-  text-align: center;
+  text-align: left;
 }
 
 .description {
