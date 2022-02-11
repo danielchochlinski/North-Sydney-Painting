@@ -15,7 +15,7 @@ function ProjectList() {
             description={project.description}
             tags={project.tags}
             image={project.image}
-            key={title}
+            key={project.title}
           />
         ))}
       </div>
