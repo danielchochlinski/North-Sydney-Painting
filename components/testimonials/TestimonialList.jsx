@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 const testimonialJSON = require("../../assets/testimonial.json");
 
-export default () => {
+const TestimonialList = () => {
   return (
     <div className="testimonialsList">
       <div className="testimonialList" id="testimonials">
@@ -29,7 +29,7 @@ export default () => {
           height: "90%",
         }} // install Swiper modules
         breakpoints={{
-          0: { slidesPerView: 1, spaceBetween: 0},
+          0: { slidesPerView: 1, spaceBetween: 0 },
           650: {
             slidesPerView: 1,
             spaceBetween: 10,
@@ -54,6 +54,7 @@ export default () => {
               title={review.title}
               review={review.review}
               service={review.service}
+              key={review.name}
             />
           </SwiperSlide>
         ))}
@@ -63,12 +64,14 @@ export default () => {
         <ul>
           <a
             target="_blank"
+            rel="noopener noreferrer"
             href="https://www.google.com/search?hl=en-IE&gl=ie&q=North+Sydney+Painting+and+Decorating,+73+Lower+Bent+St,+Neutral+Bay+NSW+2089,+Australia&ludocid=13538309938954931654&lsig=AB86z5VTDwNE5LtD58kdx7j_YbNO#lrd=0x6b12afe2e1b787dd:0xbbe1bd29128c8dc6,3"
           >
             <li>WRITE A REVIEW</li>
           </a>
           <a
             target="_blank"
+            rel="noopener noreferrer"
             href="https://www.google.com/search?hl=en-IE&gl=ie&q=North+Sydney+Painting+and+Decorating,+73+Lower+Bent+St,+Neutral+Bay+NSW+2089,+Australia&ludocid=13538309938954931654&lsig=AB86z5VTDwNE5LtD58kdx7j_YbNO#lrd=0x6b12afe2e1b787dd:0xbbe1bd29128c8dc6,1"
           >
             <li>READ MORE</li>
@@ -78,3 +81,5 @@ export default () => {
     </div>
   );
 };
+
+export default TestimonialList;

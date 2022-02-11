@@ -28,7 +28,7 @@ function AboutUs() {
   return (
     <section className="about">
       <h1>ABOUT US</h1>
-    
+
       <div className="infoContainer">
         <div className="aboutUs">
           <h3>ABOUT US</h3>
@@ -69,7 +69,7 @@ function AboutUs() {
           <div className="whyUs">
             <div className="box">
               <div className="boxHeader" onClick={() => setShow1(!show1)}>
-                <button className="awesome" className="awesome">
+                <button className="awesome">
                   <FontAwesomeIcon icon={faArrowDown} />
                 </button>
                 <h4>WHAT SETS US APART?</h4>
@@ -84,7 +84,7 @@ function AboutUs() {
             </div>
             <div className="box">
               <div className="boxHeader" onClick={() => setShow2(!show2)}>
-                <button className="awesome" className="awesome">
+                <button className="awesome">
                   <FontAwesomeIcon icon={faArrowDown} />
                 </button>
                 <h4>TOP PRODUCS ON EACH PROJECT</h4>
@@ -98,7 +98,7 @@ function AboutUs() {
             </div>
             <div className="box">
               <div className="boxHeader" onClick={() => setShow3(!show3)}>
-                <button className="awesome" className="awesome">
+                <button className="awesome">
                   <FontAwesomeIcon icon={faArrowDown} />
                 </button>
                 <h4>EXCEPTIONAL TEAM</h4>

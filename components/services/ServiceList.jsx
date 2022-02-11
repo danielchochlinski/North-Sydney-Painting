@@ -11,7 +11,7 @@ import "swiper/css/scrollbar";
 const ourServiceJSON = require("../../assets/ourService.json");
 
 
-export default () => {
+const ServiceList = () => {
   return (
     <div className="serviceList">
       <h1 id="services" className="header">
@@ -55,6 +55,7 @@ export default () => {
               title={service.title}
               description={service.description}
               image={service.image}
+              key={service.title}
             />
           </SwiperSlide>
         ))}
@@ -63,3 +64,5 @@ export default () => {
     </div>
   );
 };
+
+export default ServiceList
