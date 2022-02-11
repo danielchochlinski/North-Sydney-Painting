@@ -6,7 +6,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Typical from "react-typical";
 import ImgComp from "./ImgComp";
+import image1 from "../../public/1.jpg"
 import { Link } from "react-scroll";
+
 
 let styles = {
   textAlign: "center",
@@ -17,6 +19,8 @@ let styles = {
 
 function ImageSlider(props) {
   let slideArray = [
+    
+
     <div key="1234" className="front" style={styles}>
       <h1>
         <Typical

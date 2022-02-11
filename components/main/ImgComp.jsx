@@ -1,5 +1,5 @@
 import "./Main.module.css";
-function ImgComp({ src, alt }) {
+function ImgComp({ src }) {
   let imgStyle = {
     width: "100%",
     height: "auto",
