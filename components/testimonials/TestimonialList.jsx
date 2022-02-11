@@ -27,7 +27,7 @@ const TestimonialList = () => {
           padding: "40px",
           width: "90%",
           height: "90%",
-        }} // install Swiper modules
+        }}
         breakpoints={{
           0: { slidesPerView: 1, spaceBetween: 0 },
           650: {
@@ -48,13 +48,13 @@ const TestimonialList = () => {
         onSlideChange={() => console.log("slide change")}
       >
         {testimonialJSON.map((review) => (
-          <SwiperSlide>
+          <SwiperSlide key={review.id}>
             <TestimonialItem
               name={review.name}
               title={review.title}
               review={review.review}
               service={review.service}
-              key={review.name}
+              key={review.id}
             />
           </SwiperSlide>
         ))}

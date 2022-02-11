@@ -28,9 +28,7 @@ const ServiceList = () => {
         }} // install Swiper modules
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         breakpoints={{
-          0: {slidesPerView: 1,
-            spaceBetween: 20,
-          },
+          0: { slidesPerView: 1, spaceBetween: 20 },
           650: {
             slidesPerView: 1,
             spaceBetween: 20,
@@ -39,7 +37,6 @@ const ServiceList = () => {
             slidesPerView: 3,
             spaceBetween: 40,
           },
-         
         }}
         spaceBetween={50}
         slidesPerView={3}
@@ -50,7 +47,7 @@ const ServiceList = () => {
         onSlideChange={() => console.log("slide change")}
       >
         {ourServiceJSON.map((service) => (
-          <SwiperSlide>
+          <SwiperSlide key={service.id}>
             <ServiceItem
               title={service.title}
               description={service.description}
