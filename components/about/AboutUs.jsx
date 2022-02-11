@@ -11,6 +11,21 @@ function AboutUs() {
   const [show3, setShow3] = useState(false);
 
   const [value, setValue] = useState(0);
+  function one (){
+    setShow1(!show1)
+    setShow2(false)
+    setShow3(false)
+  }
+  function two () {
+     setShow1(false);
+     setShow2(!show2);
+     setShow3(false);
+  }
+  function three () {
+       setShow1(false);
+       setShow2(false);
+       setShow3(!show3);
+  }
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -68,7 +83,7 @@ function AboutUs() {
           </div>
           <div className="whyUs">
             <div className="box">
-              <div className="boxHeader" onClick={() => setShow1(!show1)}>
+              <div className="boxHeader" onClick={one}>
                 <button className="awesome">
                   <FontAwesomeIcon icon={faArrowDown} />
                 </button>
@@ -83,7 +98,7 @@ function AboutUs() {
               )}
             </div>
             <div className="box">
-              <div className="boxHeader" onClick={() => setShow2(!show2)}>
+              <div className="boxHeader" onClick={two}>
                 <button className="awesome">
                   <FontAwesomeIcon icon={faArrowDown} />
                 </button>
@@ -97,7 +112,7 @@ function AboutUs() {
               )}
             </div>
             <div className="box">
-              <div className="boxHeader" onClick={() => setShow3(!show3)}>
+              <div className="boxHeader" onClick={three}>
                 <button className="awesome">
                   <FontAwesomeIcon icon={faArrowDown} />
                 </button>

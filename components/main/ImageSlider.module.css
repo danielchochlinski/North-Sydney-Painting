@@ -10,7 +10,6 @@
   align-items: center;
   overflow: hidden;
   border-radius: 20px;
-
 }
 .slide {
   position: absolute;
@@ -22,8 +21,7 @@
   overflow: hidden;
 }
 .slide:hover {
-filter: brightness(70%)
-
+  filter: brightness(70%);
 }
 .button {
   position: absolute;
@@ -35,9 +33,8 @@ filter: brightness(70%)
   border: none;
   outline: none;
   transition: 0.5s;
-  color:white;
-    border-radius: 5px;
-
+  color: white;
+  border-radius: 5px;
 }
 .left {
   left: 0;
