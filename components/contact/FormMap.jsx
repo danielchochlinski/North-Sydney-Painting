@@ -22,12 +22,11 @@ const divStyle = {
 const onLoad = (infoWindow) => {
   console.log("infoWindow: ", infoWindow);
 };
-
+const key = process.env.GOOGLE_MAP_API_KEY
 function FormMap() {
   return (
-    <LoadScript googleMapsApiKey="AIzaSyDGMNIXAWroMng0ZCiHhbHCax5hj6R8zpE">
-      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={14}
-      >
+    <LoadScript googleMapsApiKey={key}>
+      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={14}>
         <InfoWindow onLoad={onLoad} position={position}>
           <div style={divStyle}>
             <h4>North Sydney Painting & Decorating</h4>

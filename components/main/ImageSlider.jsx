@@ -47,6 +47,7 @@ function ImageSlider(props) {
             width: "400px",
             height: "40px",
             borderRadius: "20px",
+            color: "white",
             background: "linear-gradient(to right, #fc5c7d, #6a82fb)",
             border: "none",
             fontSize: "20px",

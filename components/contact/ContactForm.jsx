@@ -2,7 +2,7 @@ import "./ContactForm.module.css";
 import FormMap from "./FormMap";
 import FormInput from "./FormInput";
 
-function ContactForm() {
+function ContactForm(props) {
   return (
     <div id="contact" className="container">
       <div className="intro">

@@ -112,7 +112,6 @@ code {
   overflow: hidden;
 }
 .slide:hover {
-  filter: brightness(70%);
 }
 .button {
   position: absolute;

@@ -7,11 +7,20 @@ import ContactForm from "../components/contact/ContactForm";
 import TestimonialList from "../components/testimonials/TestimonialList";
 import Footer from "../components/nav/Footer";
 import { NotificationContextProvider } from "../store/notification-context";
-
+import Head from "next/head"
 
 export default function Home() {
   return (
     <NotificationContextProvider>
+      <Head>
+        <Head>
+          <title>North Sydney Painting & Decorating</title>
+          <meta
+            name="description"
+            content="North Sydney Painting & Decorating services, top quality."
+          />
+        </Head>
+      </Head>
       <div className="app">
         <Header />
         <Main />
@@ -25,3 +34,5 @@ export default function Home() {
     </NotificationContextProvider>
   );
 }
+
+
