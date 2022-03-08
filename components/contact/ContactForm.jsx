@@ -3,7 +3,6 @@ import FormMap from "./FormMap";
 import FormInput from "./FormInput";
 
 function ContactForm(props) {
-  console.log(props.googleKey)
   return (
     <div id="contact" className="container">
       <div className="intro">
