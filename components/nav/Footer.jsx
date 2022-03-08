@@ -36,7 +36,7 @@ function Footer() {
       >
         <div className="class">
           <img src="images/icons/email.png" alt="email" />
-          <h4>jacobpuertasalvatore@gmail.com</h4>
+          <h4>northsydneypainting@outlook.com</h4>
           <p>Mon-Sat 24/7</p>
           <a
             href="mailto: jacobpuertasalvatore@gmail.com"
