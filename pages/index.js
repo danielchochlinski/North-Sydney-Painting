@@ -35,10 +35,10 @@ export default function Home(props) {
   );
 }
 
-export async function getStaticProps() {
+export function getStaticProps() {
   return {
     props: {
-      googleKey: process.env.GOOGLE_MAP_API_KEY,
+      googleKey: process.env.GOOGLE_MAP_API_KEY 
     },
   };
 }
