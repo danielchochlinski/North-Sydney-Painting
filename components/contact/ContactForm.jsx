@@ -3,6 +3,7 @@ import FormMap from "./FormMap";
 import FormInput from "./FormInput";
 
 function ContactForm(props) {
+  console.log(props.googleKey)
   return (
     <div id="contact" className="container">
       <div className="intro">
@@ -48,7 +49,7 @@ function ContactForm(props) {
           <FormInput />
         </div>
         <div className="map">
-          <FormMap />
+          <FormMap googleKey={props.googleKey} />
         </div>
       </div>
     </div>

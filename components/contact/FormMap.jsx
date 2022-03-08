@@ -19,11 +19,10 @@ const divStyle = {
   padding: 15,
 };
 
-const onLoad = (infoWindow) => {
-  console.log("infoWindow: ", infoWindow);
-};
-const key = process.env.GOOGLE_MAP_API_KEY
-function FormMap() {
+const onLoad = (infoWindow) => {};
+function FormMap(props) {
+  const key = props.googleKey;
+
   return (
     <LoadScript googleMapsApiKey={key}>
       <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={14}>

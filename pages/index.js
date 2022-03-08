@@ -7,9 +7,9 @@ import ContactForm from "../components/contact/ContactForm";
 import TestimonialList from "../components/testimonials/TestimonialList";
 import Footer from "../components/nav/Footer";
 import { NotificationContextProvider } from "../store/notification-context";
-import Head from "next/head"
+import Head from "next/head";
 
-export default function Home() {
+export default function Home(props) {
   return (
     <NotificationContextProvider>
       <Head>
@@ -28,11 +28,17 @@ export default function Home() {
         <AboutUs />
         <ProjectList />
         <TestimonialList />
-        <ContactForm />
+        <ContactForm googleKey={props.googleKey}/>
         <Footer />
       </div>
     </NotificationContextProvider>
   );
 }
 
-
+export async function getStaticProps() {
+  return {
+    props: {
+      googleKey: process.env.GOOGLE_MAP_API_KEY,
+    },
+  };
+}

@@ -2,7 +2,6 @@ import { useState } from "react";
 import "./ProjectCard.module.css";
 function ProjectCard(props) {
   const [showText, setShowText] = useState(false);
-  console.log(props.image);
 
   function onMouseShow(e) {
     setShowText(true);

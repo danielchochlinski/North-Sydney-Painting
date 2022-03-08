@@ -10,7 +10,6 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 const ourServiceJSON = require("../../assets/ourService.json");
 
-
 const ServiceList = () => {
   return (
     <div className="serviceList">
@@ -43,8 +42,8 @@ const ServiceList = () => {
         navigation
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
+        onSwiper={(swiper) => swiper}
+        onSlideChange={() => "slide change"}
       >
         {ourServiceJSON.map((service) => (
           <SwiperSlide key={service.id}>
@@ -62,4 +61,4 @@ const ServiceList = () => {
   );
 };
 
-export default ServiceList
+export default ServiceList;
