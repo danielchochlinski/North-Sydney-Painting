@@ -14,7 +14,7 @@ export default async function handler(req, res) {
 
   const data = {
     to: "jacobpuertasalvatore@gmail.com",
-    from: "busniess@northsydneypainting.com",
+    from: "NorthSydneyPainting@northsydneypainting.com",
     subject: "New business inquiry!",
     test: message,
     html: message,
