@@ -70,7 +70,6 @@ function FormInput() {
         message: "Your quote is on your way",
         status: "success",
       });
-     
     } catch (error) {
       notificationCtx.showNotification({
         title: "Unsuccesful",
