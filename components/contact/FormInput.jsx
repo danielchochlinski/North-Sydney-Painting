@@ -1,10 +1,10 @@
 import useInput from "../../hooks/useInput";
 import NotificationContext from "../../store/notification-context";
-import {useContext} from "react"
+import { useContext } from "react";
 const isNotEmpty = (value) => value.trim() !== "";
 
 function FormInput() {
-   const notificationCtx = useContext(NotificationContext);
+  const notificationCtx = useContext(NotificationContext);
   const {
     value: enteredName,
     isValid: nameIsValid,
@@ -49,8 +49,8 @@ function FormInput() {
   async function sendEmailHandler(e) {
     e.preventDefault();
 
-    if(!formIsValid){
-      return
+    if (!formIsValid) {
+      return;
     }
 
     let data = {
@@ -60,29 +60,24 @@ function FormInput() {
       message: enteredMessage,
     };
 
-    
-
     try {
       const response = await fetch("/api/submitContactForm", {
         method: "POST",
         body: JSON.stringify(data),
       });
-         notificationCtx.showNotification({
-           title: "Successful",
-           message: "Your quote is on your way",
-           status: "success",
-         });
-      // if (!response.ok) {
-      //   throw new Error("Something went wrong!");
-      // }
-       
+      notificationCtx.showNotification({
+        title: "Successful",
+        message: "Your quote is on your way",
+        status: "success",
+      });
+     
     } catch (error) {
-        notificationCtx.showNotification({
-          title: "Unsuccesful",
-          message:
-            "Apologies for the inconvenience, please call us at : 0487 556 397",
-          status: "error",
-        });
+      notificationCtx.showNotification({
+        title: "Unsuccesful",
+        message:
+          "Apologies for the inconvenience, please call us at : 0487 556 397",
+        status: "error",
+      });
       console.log(error.message);
     }
 
@@ -130,7 +125,7 @@ function FormInput() {
           onBlur={messageBlurHandler}
         />
       </div>
-        <button>CONTACT US!</button>
+      <button>CONTACT US!</button>
     </form>
   );
 }
