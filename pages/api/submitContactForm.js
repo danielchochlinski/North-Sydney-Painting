@@ -1,6 +1,7 @@
 const mail = require("@sendgrid/mail");
-console.log(process.env.SENDGRID_API_KEY);
-mail.setApiKey(process.env.SENDGRID_API_KEY);
+const key = process.env.SENDGRID_API_KEY;
+
+mail.setApiKey(key);
 
 export default async function handler(req, res) {
   const body = JSON.parse(req.body);
@@ -8,7 +9,7 @@ export default async function handler(req, res) {
   const message = `
   Name: ${body.name}<br/>
   Email: ${body.email}<br/>
-  Subject: ${body.subject}<br/>
+  PhoneNumber: ${body.phone}<br/>
   Message: ${body.message}<br/>`;
 
   const data = {

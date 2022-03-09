@@ -49,12 +49,18 @@ function FormInput() {
   async function sendEmailHandler(e) {
     e.preventDefault();
 
+    if(!formIsValid){
+      return
+    }
+
     let data = {
       name: enteredName,
       email: enteredEmail,
       phone: enteredPhone,
       message: enteredMessage,
     };
+
+    
 
     try {
       const response = await fetch("/api/submitContactForm", {
@@ -66,15 +72,17 @@ function FormInput() {
            message: "Your quote is on your way",
            status: "success",
          });
-      if (!response.ok) {
-        throw new Error("Something went wrong!");
-      }
-         notificationCtx.showNotification({
-           title: "Unsuccesful",
-           message: "Apologies for the inconvenience, please call us at : 0487 556 397",
-           status: "error",
-         });
+      // if (!response.ok) {
+      //   throw new Error("Something went wrong!");
+      // }
+       
     } catch (error) {
+        notificationCtx.showNotification({
+          title: "Unsuccesful",
+          message:
+            "Apologies for the inconvenience, please call us at : 0487 556 397",
+          status: "error",
+        });
       console.log(error.message);
     }
 

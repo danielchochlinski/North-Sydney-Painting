@@ -1,7 +1,7 @@
 [
   {
     "title": "Castle Crove",
-    "description": "Residentail paintin, interior painting & decoration, classical, elegant and beautiful white shades were used for this project. ",
+    "description": "Residential painting, interior painting & decoration, classical, elegant and beautiful white shades were used for this project. ",
     "tags": [{ "tag": "Interior" }, { "tag": "Residential" }],
     "image": "images/CastleCrove.jpg"
   },
@@ -24,13 +24,13 @@
 
   {
     "title": "Northern Beaches Hospital",
-    "description": "Commercial interior paining, one of our bigger clients. We had the pleasure to brighten up our local hispital to bring more color and joy.",
+    "description": "Commercial interior painting, one of our bigger clients. We had the pleasure to brighten up our local hospital to bring more color and joy.",
     "tags": [{ "tag": "Interior" }, { "tag": "Commercial" }],
     "image": "images/NorthernBeachesHospital.jpg"
   },
   {
     "title": "North Sydney",
-    "description": "Residential interior job, freshened up the whole apartment with white, including wood floor sanding, with 2 layers of industrial floor lacquer to our customers choice of finish. If desired we can also dye the floors to the desired color. ",
+    "description": "Residential interior job, freshened up the whole apartment with white, including wood floor sanding, with 2 layers of industrial floor lacquer to our customer's choice of finish. If desired we can also dye the floors to the desired color. ",
     "tags": [{ "tag": "Interior" }, { "tag": "Residential" }],
     "image": "images/NorthSydney.jpg"
   },
