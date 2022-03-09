@@ -3,7 +3,7 @@ const key = process.env.SENDGRID_API_KEY;
 
 mail.setApiKey(key);
 
-export default (req, res) => {
+export default async (req, res) => {
   const body = JSON.parse(req.body);
 
   const message = `
@@ -19,8 +19,13 @@ export default (req, res) => {
     test: message,
     html: message,
   };
-  console.log(data);
-  mail.send(data);
 
-  res.status(200).json({ status: "Ok" });
+  try {
+    await mail.send(data);
+
+    res.status(200).json({ status: "Ok" });
+  } catch (error) {
+    console.log("ERROR", error);
+    res.status(400).send("Message not sent.");
+  }
 };
