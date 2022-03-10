@@ -1,13 +1,13 @@
 [
   {
-    "title": "Castle Crove",
+    "title": "Castle Cove",
     "description": "Residential painting, interior painting & decoration, classical, elegant and beautiful white shades were used for this project. ",
     "tags": [{ "tag": "Interior" }, { "tag": "Residential" }],
     "image": "images/CastleCrove.jpg"
   },
   {
     "title": "Balmoral Beach",
-    "description": "Commercial painting on one of the most popular restaurant in Syndey, both internal and external.",
+    "description": "Commercial painting on one of the most popular restaurant in Sydney, both internal and external.",
     "tags": [
       { "tag": "Interior" },
       { "tag": "Exterior" },
@@ -17,7 +17,7 @@
   },
   {
     "title": "Killara",
-    "description": "Residential property, highest quality exterior finish. Crips sky blue with white finish, another satisfied customer.",
+    "description": "Residential property, highest quality exterior finish. Sky blue with white finish, another satisfied customer.",
     "tags": [{ "tag": "Exterior" }, { "tag": "Residential" }],
     "image": "images/Killara.jpg"
   },

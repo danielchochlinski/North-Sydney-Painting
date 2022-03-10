@@ -13,7 +13,7 @@ export default async (req, res) => {
   Message: ${body.message}<br/>`;
 
   const data = {
-    to: "jacobpuertasalvatore@gmail.com",
+    to: "northsydneypainting@outlook.com",
     from: "NorthSydneyPainting@northsydneypainting.com",
     subject: "New business inquiry!",
     test: message,
