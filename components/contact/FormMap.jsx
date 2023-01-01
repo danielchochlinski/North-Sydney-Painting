@@ -22,20 +22,22 @@ const divStyle = {
 const onLoad = (infoWindow) => {};
 function FormMap(props) {
   const key = props.googleKey;
+  const keyTwo = "12323";
 
   return (
-    <LoadScript googleMapsApiKey={key}>
-      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={14}>
-        <InfoWindow onLoad={onLoad} position={position}>
-          <div style={divStyle}>
-            <h4>North Sydney Painting & Decorating</h4>
-            <p>73 Lower Bent St Neutral Bay NSW 2089 Australia</p>
-            <p>Call now: 0487 556 397</p>
-          </div>
-        </InfoWindow>
-        <></>
-      </GoogleMap>
-    </LoadScript>
+    // <LoadScript googleMapsApiKey={keyTwo}>
+    //   <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={14}>
+    //     <InfoWindow onLoad={onLoad} position={position}>
+    //       <div style={divStyle}>
+    //         <h4>North Sydney Painting & Decorating</h4>
+    //         <p>73 Lower Bent St Neutral Bay NSW 2089 Australia</p>
+    //         <p>Call now: 0487 556 397</p>
+    //       </div>
+    //     </InfoWindow>
+    //     <></>
+    //   </GoogleMap>
+    // </LoadScript>
+    <div></div>
   );
 }
 

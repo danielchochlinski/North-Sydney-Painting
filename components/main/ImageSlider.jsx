@@ -6,9 +6,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Typical from "react-typical";
 import ImgComp from "./ImgComp";
-import image1 from "../../public/1.jpg"
+import image1 from "../../public/1.jpg";
 import { Link } from "react-scroll";
-
 
 let styles = {
   textAlign: "center",
@@ -19,8 +18,6 @@ let styles = {
 
 function ImageSlider(props) {
   let slideArray = [
-    
-
     <div key="1234" className="front" style={styles}>
       <h1>
         <Typical
@@ -29,7 +26,7 @@ function ImageSlider(props) {
           steps={[`North Sydney Painting & Decorating`, 100]}
         />
       </h1>
-      <a id="contactUs">
+      <a id="contactUs" className="hero_link">
         <Link
           to="contact"
           smooth={true}
@@ -41,7 +38,6 @@ function ImageSlider(props) {
         <button
           style={{
             zIndex: "99",
-            position: "absolute",
             top: "700px",
             left: "35%",
             width: "400px",
@@ -90,12 +86,12 @@ function ImageSlider(props) {
         </div>
       ))}
 
-      <button className="button left" onClick={goLeftHandler}>
+      {/* <button className="button left" onClick={goLeftHandler}>
         <FontAwesomeIcon icon={faChevronLeft} />
       </button>
       <button className="button right" onClick={goRightHandler}>
         <FontAwesomeIcon icon={faChevronRight} />
-      </button>
+      </button> */}
     </div>
   );
 }

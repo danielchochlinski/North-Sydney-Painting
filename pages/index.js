@@ -28,17 +28,17 @@ export default function Home(props) {
         <AboutUs />
         <ProjectList />
         <TestimonialList />
-        <ContactForm googleKey={props.googleKey}/>
+        <ContactForm googleKey={props.googleKey} />
         <Footer />
       </div>
     </NotificationContextProvider>
   );
 }
 
-export function getStaticProps() {
-  return {
-    props: {
-      googleKey: process.env.GOOGLE_MAP_API_KEY 
-    },
-  };
-}
+// export function getStaticProps() {
+//   return {
+//     props: {
+//       googleKey: process.env.GOOGLE_MAP_API_KEY
+//     },
+//   };
+// }

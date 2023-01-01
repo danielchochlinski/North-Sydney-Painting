@@ -32,9 +32,13 @@ const TestimonialList = () => {
           0: { slidesPerView: 1, spaceBetween: 0 },
           650: {
             slidesPerView: 1,
-            spaceBetween: 10,
+            spaceBetween: 0,
           },
-          768: {
+          800: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1130: {
             slidesPerView: 3,
             spaceBetween: 40,
           },
