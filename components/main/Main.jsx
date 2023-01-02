@@ -5,7 +5,6 @@ import { Link } from "react-scroll";
 let styles = {
   textAlign: "center",
   fontFamily: "Tangerine",
-  paddingTop: "300px",
   fontSize: "100px",
 };
 function Main() {
