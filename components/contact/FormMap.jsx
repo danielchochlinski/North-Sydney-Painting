@@ -5,6 +5,7 @@ import { InfoWindow } from "@react-google-maps/api";
 const containerStyle = {
   width: "100%",
   height: "100%",
+  borderRadious: "20px",
 };
 
 const center = {
