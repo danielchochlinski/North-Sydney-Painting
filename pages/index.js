@@ -35,10 +35,10 @@ export default function Home(props) {
   );
 }
 
-// export function getStaticProps() {
-//   return {
-//     props: {
-//       googleKey: process.env.GOOGLE_MAP_API_KEY
-//     },
-//   };
-// }
+export function getStaticProps() {
+  return {
+    props: {
+      googleKey: process.env.GOOGLE_MAP_API_KEY,
+    },
+  };
+}
