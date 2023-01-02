@@ -9,10 +9,10 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 const ourServiceJSON = require("../../assets/ourService.json");
-
+import styles from "./ServiceList.module.css";
 const ServiceList = () => {
   return (
-    <div className="serviceList">
+    <div className={styles.serviceList}>
       <h1 id="services" className="header">
         Our Services
       </h1>
@@ -20,9 +20,8 @@ const ServiceList = () => {
       <Swiper
         style={{
           position: "relative",
-          marginLeft: "20px",
           top: "-100px",
-          width: "90%",
+          width: "100%",
           height: "90%",
         }} // install Swiper modules
         modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -32,7 +31,7 @@ const ServiceList = () => {
             slidesPerView: 1,
             spaceBetween: 20,
           },
-          768: {
+          850: {
             slidesPerView: 2,
             spaceBetween: 40,
           },

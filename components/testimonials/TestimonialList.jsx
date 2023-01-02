@@ -21,12 +21,8 @@ const TestimonialList = () => {
       </div>
       <Swiper
         style={{
-          position: "relative",
           marginTop: "120px",
-          marginLeft: "30px",
-          padding: "40px",
-          width: "90%",
-          height: "90%",
+          padding: "30px",
         }}
         breakpoints={{
           0: { slidesPerView: 1, spaceBetween: 0 },

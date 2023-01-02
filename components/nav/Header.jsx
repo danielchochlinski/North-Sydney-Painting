@@ -7,8 +7,8 @@ import NotificationContext from "../../store/notification-context";
 function Header() {
   const [showLinks, setShowLinks] = useState(false);
   const [style, setStyle] = useState(false);
-    const notificatioCtx = useContext(NotificationContext);
-    const activeNotification = notificatioCtx.notification;
+  const notificatioCtx = useContext(NotificationContext);
+  const activeNotification = notificatioCtx.notification;
 
   return (
     <nav className="nav">
