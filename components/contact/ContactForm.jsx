@@ -35,7 +35,7 @@ function ContactForm(props) {
           <h4>northsydneypainting@outlook.com</h4>
           <p>Mon-Sun 24/7</p>
           <a
-            href="mailto: jacobpuertasalvatore@gmail.com"
+            href="mailto: northsydneypaint@gmail.com"
             rel="noopener noreferrer"
             target="_blank"
           >
