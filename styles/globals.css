@@ -94,7 +94,7 @@ code {
   flex-wrap: wrap;
   bottom: -250px;
   width: 100%;
-  height: 180px;
+  /* height: 180px; */
   background-color: rgba(70, 70, 70, 0.1);
   color: black;
   text-align: center;
@@ -105,9 +105,7 @@ code {
   font-weight: bold;
 }
 .footer .class {
-  margin-left: 10px;
   padding: 10px;
-  width: 200px;
 }
 .footer .class img {
   width: 70px;
@@ -757,14 +755,14 @@ code {
   /* Footer */
   .footer {
     position: fixed;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     font-size: 7px;
     float: left;
     bottom: 0;
-
+    align-items: center;
     width: 100%;
-    height: 100px;
+    /* height: 100px; */
     z-index: 9999;
     background-color: rgba(70, 70, 70, 0.1);
     color: black;
@@ -786,11 +784,15 @@ code {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    padding: 10px;
+    /* padding: 10px; */
   }
   .footer .class {
     margin-left: 10px;
     display: inline;
+    width: 100%;
+    min-width: none;
+    max-width: none;
+    margin: 0;
   }
   .footer .class img {
     width: 30px;
