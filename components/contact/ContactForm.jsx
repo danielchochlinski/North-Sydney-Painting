@@ -32,7 +32,7 @@ function ContactForm(props) {
         </div>
         <div className="class">
           <img src="images/icons/email.png" alt="email" />
-          <h4>northsydneypainting@outlook.com</h4>
+          <h4>nnorthsydneypaint@gmail.com</h4>
           <p>Mon-Sun 24/7</p>
           <a
             href="mailto: northsydneypaint@gmail.com"
@@ -49,6 +49,15 @@ function ContactForm(props) {
         </div>
         <div className="map">
           <FormMap googleKey={props.googleKey} />
+          {/* <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13256.71461188464!2d151.21293412866106!3d-33.83350309560993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12afe2e1b787dd%3A0xbbe1bd29128c8dc6!2sNorth%20Sydney%20Painting!5e0!3m2!1sen!2spl!4v1678883614992!5m2!1sen!2spl"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe> */}
         </div>
       </div>
     </div>
